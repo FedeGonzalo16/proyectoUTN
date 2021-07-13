@@ -2,7 +2,7 @@
 
 create database utnproyecto;
 
-use proyectoUtn;
+use utnproyecto;
 
 /* #Tabla para el Sing-In */
 CREATE TABLE `utnproyecto`.`signin` (
