@@ -1,6 +1,6 @@
 /* Comando para la creación de las tablas de la B.D */
 
-create database proyectoUtn;
+create database utnproyecto;
 
 use proyectoUtn;
 
