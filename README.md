@@ -8,6 +8,7 @@ La página web se encuentra subida en Heroku.
 Muchas Gracias!.
 
 A continuación algunas capturas de pantalla del sitio web:
+
 Home:
 ![Captura de pantalla (8)](https://user-images.githubusercontent.com/82186644/125468725-be7315ab-c728-4794-82cf-bd9e5be3b9c9.png)
 ![Captura de pantalla (9)](https://user-images.githubusercontent.com/82186644/125468732-3e37364f-4c69-44f2-875d-4d757410d046.png)
