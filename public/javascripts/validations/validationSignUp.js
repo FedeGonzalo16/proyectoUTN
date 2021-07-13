@@ -22,9 +22,6 @@ function sendFormSignup(){
     if(passwordSignup.value === null || passwordSignup.value === '') {
         mnsjsError.push('Ingresa una contraseña');
     }
-    if(confirmPassword.value === null || confirmPassword.value === '') {
-        mnsjsError.push('Ingresa nuevamente tu contraseña');
-    }
     if(confirmPassword.value !== passwordSignup.value) {
         mnsjsError.push('Las contraseñas no coinciden');
     }
