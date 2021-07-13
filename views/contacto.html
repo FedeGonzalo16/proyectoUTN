@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="contacto, vincentclassic, viny">
+    <meta name="description" content="">
+    <meta name="author" content="Federico Prieto">
+    <meta name="copyright" content="Copyright">
+
+    <title>Contacto</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/public/Imgs/favicon (2).ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Letra -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <!-- Letra Navbar -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <!-- Css estilos -->
+    <link rel="stylesheet" href="/public/stylesheets/estilos.css">
+    <!-- Css Navbar -->
+    <link rel="stylesheet" href="/public/stylesheets/partials/navbar.css">
+    <!-- Css Footer -->
+    <link rel="stylesheet" href="/public/stylesheets/partials/footer.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="content">
+                <div class="logo"><a href="#"><span class="span-nav">S</span>unny & <span class="span-nav">V</span>incent</a></div>
+                <ul class="menu-list">
+                    <!-- EL icono  para q al tocar se cierre el nav en menos de 868 px-->
+                    <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                    </div> 
+                    <li> <a href="/index.html">Home</a></li>
+                    <li> <a href="/views/nosotros.html">Nosotros</a></li>
+                    <li> <a href="/views/galería.html">Galería</a></li>
+                    <li> <a href="/views/contacto.html">Contacto</a></li>
+                    <li class="li-login"><a href="/views/sign-in-up.html" class="a-login">Login</a></li>
+                </ul>
+            <!-- EL icono  para q al tocar se despliegue el nav en menos de 868 px-->
+            <div class="icon list-btn">
+                <i class="fas fa-list"></i>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-contact">
+            <form class="form-contact">
+                <div class="row">
+                    <div class="input-contact">
+                        <input type="text" minlength="2" maxlength="30" required>
+                        <label for="nombre-contacto"><i class="fas fa-user"></i> Nombre:</label>
+                    </div>
+                    <div class="input-contact">
+                        <input type="text" minlength="2" max="40" required>
+                        <label for="apellido-contacto"><i class="fas fa-user-plus"></i> Apellido:</label>
+                    </div>
+                </div>
+                <div class="input-contact">
+                    <input type="text" minlength="8" maxlength="40" required>
+                    <label for="email-contacto"><i class="fas fa-envelope"></i> Email:</label>
+                </div>
+                <div class="input-contact">
+                    <textarea id="message" rows="8" minlength="4" maxlength="150"></textarea>
+                    <label for="message"><i class="fas fa-comments"></i> Mensaje:</label>
+                </div>
+                <button class="btn-contact" type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="content-footer">
+                <div class="info-footer">
+                    <h4 class="h4-footer"><i>© 2021 Copyright - Todos los derechos reservados.</i></h4>
+                </div>
+                <div class="info-footer">
+                    <p class="p-footer">- Desarrollado por Federico Prieto - </p>
+                </div>
+                <div class="icons-footer">
+                    <a href="https://www.instagram.com/vincentclassic.car/?utm_medium=copy_link&fbclid=IwAR1-_aWOD_E2VXA4uHRM9nAU2dHbaTp8yoij-A5gy_FKaH4ouhR4HG-9BPI" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/federico.prieto.716195/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="mailto:hernan210273@hotmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:1551799647"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+</footer>  
+    <!-- Functionalities -->
+    <script src="/public/javascripts/functionality.js"></script>
+</body>
+</html>

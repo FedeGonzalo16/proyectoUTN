@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Sign, signup, sign-in-up, VW, vincentclassic, viny, vehículos">
+    <meta name="description" content="">
+    <meta name="author" content="Federico Prieto">
+    <meta name="copyright" content="Copyright">
+
+    <title>Sign In-Sign Up</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/public/Imgs/favicon (2).ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <!-- Letra Navbar -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <!-- Css estilos -->
+    <link rel="stylesheet" href="/public/stylesheets/estilos.css">
+    <!-- Css Navbar -->
+    <link rel="stylesheet" href="/public/stylesheets/partials/navbar.css">
+    <!-- Css Footer -->
+    <link rel="stylesheet" href="/public/stylesheets/partials/footer.css">
+</head>
+<body class="body-sign">
+    <main>
+        <div class="sctsign">
+        <div class="container">
+            <div class="user signinBx"> <!-- Sign In -->
+                <div class="ImgBx"><img class="img-sign" src="/public/Imgs/marce 9.png" alt="Sign In"></div>
+                <div class="formBx">
+                    <form> 
+                        <h2>Sign In</h2>
+                        <input type="text" placeholder="Nombre de Usuario" id="username" minlength="4">
+                        <input type="password" placeholder="Contraseña"  id="password" minlength="6" maxlength="12">
+                        <input type="submit" value="Log in" id="submit" onclick="return sendForm();">
+                        <p class="signup"> No tienes una cuenta? <a href="#" onclick="toggleForm();">Sign up.</a></p> <!-- Al clickear lleve al Singn Up -->
+                        <div class="error-form" id="error-form">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="user signupBx"> <!-- Sign Up -->
+                <div class="formBx">
+                    <form id="form-signup">
+                        <h2>Crea una Cuenta</h2>
+                        <input type="text" placeholder="Nombre de Usuario" id="username-signup" minlength="4" required>
+                        <input type="text" placeholder="Correo" id="email" minlength="12" required>
+                        <input type="password" placeholder=" Crear Contraseña" id="password-signup" minlength="6" maxlength="12" required>
+                        <input type="password" placeholder=" Confirmar Contraseña"  id="confirm-password" minlength="6" maxlength="12" required>
+                        <input type="submit" value="Sign Up" id="submit" onclick="return sendFormSignup()";>
+                        <p class="signup"> Ya tienes una cuenta? <a href="#" onclick="toggleForm();">Sign in.</a></p> <!-- Al clickear lleve al Singn In -->
+                        <div class="error-signup" id="error-signup">
+                        </div>
+                    </form>
+                </div>
+                <div class="ImgBx"><img class="img-sign" src="/public/Imgs/17358770_10154436755337654_3395708256383185072_o.jpg" alt="Sign Up"></div>
+            </div>  
+        </div>
+    </div>
+    </main>
+    <!-- Functionalities -->
+    <script src="/public/javascripts/functionality.js"></script>
+    <!-- Validaciones -->
+    <script src="/public/javascripts/validations/validationSignIn.js"></script>
+    <script src="/public/javascripts/validations/validationSignUp.js"></script>
+</body>
+</html>
