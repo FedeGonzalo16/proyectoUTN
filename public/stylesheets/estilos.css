@@ -1,0 +1,842 @@
+
+/* Normalize */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:'Lato', sans-serif; 
+}
+
+/*  */
+/* Index */
+/*  */
+
+.main-index {
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+.banner { /* img banner-fondo  q quede como en el lugar.*/
+    min-height: 100vh;
+    background: url("/public/Imgs/IMG_3560.JPG") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.about {
+    padding: 50px 10px;
+    position: relative;
+    display: flex;
+}
+
+.title-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.title-index h3 {
+    font-size: 2.5em;
+    margin: 20px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.title-index .span-index {
+    color: #8b8b8b;
+    font-size: 1.3em;
+}
+
+.container-card {
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #eeeeee;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    width: 100vh;
+    height: 560px;
+    margin: 40px 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #eeeeee;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 2s ease;
+}
+
+.card:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+}
+
+.card .content-card {
+    padding: 15px;
+    text-align: center;
+}
+
+.card .content-card p {
+    line-height: 1.5;
+    color: #575757;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.card .content-card  a {
+    color: #698537;
+    transition: 0.4s;
+}
+
+.card .content-card  a:hover {
+    color: #749743;
+}
+
+.card .span-cards {
+    color:  #749743;
+    font-size: 1.2em;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 1px;
+    border-bottom: 2px double #749743;
+}
+
+.card h3:hover {
+    color: #454647;
+}
+
+/* Index Responsive */
+
+@media (max-width: 1100px) {
+    .container-card {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        height: 500px;
+    }
+} 
+
+@media (min-width: 680px) and (max-width: 977px) {
+    .title-index {
+        font-size: 1.1em;
+    }
+    
+    .title-index .span-index {
+        color: #8b8b8b;
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1517px) {
+    .card {
+        height: 700px;
+    }
+}
+
+@media (max-width: 650px) {
+    .card {
+        height: 640px;
+    }
+}
+
+/*  */
+/* Nosotros */
+/*  */
+
+.content-about {
+    background: #fff;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    overflow: hidden;
+}
+
+.title-about {
+    display: flex;
+    justify-content: center;
+}
+
+.title-ab {
+    margin-top: 120px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border: 2px solid #ffffff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.title-ab h4 {
+    letter-spacing: 1px;
+    font-size: 2.4em;
+}
+
+.info-1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.info-1 .p-info1 {
+    font-size: 1.2em;
+    color: #000;
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+.info-1 .p-info1b {
+    font-size: 1.2em;
+    color:  rgb(112, 111, 111);
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+.title-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -50px;
+    color: #454647;
+    font-size: 1.4em;
+    letter-spacing: 3px;
+}
+
+.imgs-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+.imgs-about .img-about {
+    height: 70vh;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 3px 3px;
+}
+
+.img-about {
+    width: 700px;
+} 
+
+.img-about:hover {
+    transform: scale(0.97);
+}
+
+.cont-info2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -80px;
+}
+
+.info-2 {
+    margin: 100px 50px 10px 50px;
+    text-align: center;
+}
+
+.info-2 .p-info2 {
+    font-size: 1.25em;
+    color: #6e6e6e;
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+.info-3 {
+    margin: 110px 50px 40px 50px;
+}
+
+.info-3 .p-info3 {
+    font-size: 1.1em;
+    color: #8b8b8b;
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+.info-3 .p-info3 a {
+    color: #698537;
+}
+
+.info-3 .p-info3 a:hover {
+    color: #749743;
+}
+
+/* Nosotros Responsive */
+
+@media (max-width: 1300px) {
+    .imgs-about {
+        flex-wrap: wrap;
+    }
+
+    .imgs-about .img-about {
+        margin: 5px;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1433px) {
+    .img-about {
+        width: 600px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 620px) {
+    .img-about {
+        width: 360px !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .title-img {
+        font-size: 1.1em;
+    }
+
+    .img-about {
+        height: 500px !important;
+    }
+    
+    .info-1 .p-info1 {
+        font-size: 1.1em;
+    }
+
+    .info-1 .p-info1b {
+    font-size: 1em;
+    } 
+
+    .info-2 .p-info2 {
+        font-size: 1em;
+    }
+
+    .info-3 .p-info3 {
+        font-size: 0.95em;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 360px) {
+    .title-img {
+        margin-left: 25%;
+    }
+
+    .img-about {
+        width: 320px !important;
+        height: 400px !important;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1100px) {
+    .cont-info2 {
+        display: inline;
+        text-align: center;
+    }
+
+    .info-2 {
+        margin: 40px 50px;
+        margin-bottom: -50px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .info-1 {
+        flex-wrap: wrap;
+    }
+
+    .info-1 .p-info1 {
+        font-size: 1.2em;
+    }
+
+    .info-1 .p-info1b {
+        font-size: 1.1em;
+    }
+
+    .img-about {
+        width: 600px;
+        height: 60vh;
+    }
+}
+
+/*  */
+/* Galerìa */
+/*  */
+
+.main-gallery {
+    overflow-x: hidden;
+    background: #8f9092;
+}
+
+.pre-gallery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+}
+
+.title-gallery{
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+.title-ga {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 30px;
+    border: 2px solid #ffffff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.title-ga h4 {
+    letter-spacing: 1px;
+    font-size: 2.4em;
+}
+
+span {
+    color: #eeeeee;
+    font-size: 1.5em;
+}
+
+.container-gallery {
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+    margin: -1px;
+    background-color: #f5f5f5;
+}
+
+.row-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    margin: 10px 18px;
+}
+
+.column-gallery {
+    flex: 25%;
+    padding: 8px;
+    background-color: #e0e0e0;
+}
+
+.column-gallery img {
+    margin-top: 16px;
+    transition: transform 0.5s ease;
+}
+
+.column-gallery img:hover {
+    transform: scale(0.97);
+    filter: contrast(1.05);
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease;
+}
+
+img:hover {
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.4);
+}
+
+.function-gallery {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: transfrom 0.3s ease-in-out;
+}
+
+.function-gallery img {
+    width: 75vh;
+    max-height: 70vh;
+}
+
+.function-gallery:target { /* Funcionalidad, que haga al clickear */
+    transform: scale(1);
+}
+
+/* Iconos que aportan la funcionalidad a la imagen una vez targeteada */
+
+.close {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+.next {
+    color: #f5f5f5;
+    font-size: 4em;
+    margin: 0 40px;
+    text-decoration: none;
+}
+
+/* Galeria - Responsive */
+
+@media (max-width: 1024px) {
+    .column-gallery {
+        flex: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column-gallery {
+        flex: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-ga {
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    .title-ga h4 {
+        font-size: 2em;
+    }
+}
+
+/*  */
+/* Contacto */
+/*  */
+
+.container-contact {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), #8b8b8b), url(/public/Imgs/24058960_10214213218753315_6726286299231952133_n.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-contact {
+    margin-top: 40px;
+    width: 60%;
+}
+
+.input-contact {
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: 600;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+}
+
+textarea:focus~label { /* Al clickear en el textarea desaparezca el label */
+    display: none;
+}
+
+.btn-contact {
+    padding: 10px 0;
+    color: #f5f5f5;
+    outline: none;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    width: 100%;
+    cursor: text;
+    transition: 0.3s;
+    height: 60px;
+    cursor: pointer;
+}
+
+.btn-contact:hover {
+    background: rgba(51, 50, 50, 0.6);
+}
+
+input:focus~label,
+input:valid~label
+ { /* Al focus, en los input, se desplazen los icons y el texto ya escrito que solicita los datos. */
+    top: -35px;
+    font-size: 0.8em;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input-contact {
+    flex-basis: 48%;
+}
+
+@media (max-width: 390px) {
+    label, i {
+        font-size: 0.78em;
+    }
+}
+
+/*  */
+/* Sign In & Sign Up */
+/*  */
+
+.sctsign {
+    position: relative;
+    min-height: 100vh;
+    background: #454647;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.sctsign.active { /* Al cambiar al Sing Up el backg cambie; 1 bckg para cada uno.  */
+    background: rgb(78, 100,84);
+}
+
+.sctsign .container {
+    position: relative;
+    width: 940px;
+    height: 600px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.sctsign .container .user {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.sctsign .container .user .ImgBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.sctsign .container .user .ImgBx .img-sign {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sctsign .container .user .formBx {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transition: 0.5s;
+}
+
+.sctsign .container .user .formBx h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #555;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sctsign .container .user .formBx input {
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 14px;
+    margin: 8px 0;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.sctsign .container .user .formBx input[type="submit"] {
+    max-width: 50%;
+    background: rgb(236, 53, 53);
+    color: #fff;
+    font-size: 1.1em;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    transition: 0.7s;
+}
+
+.sctsign .container .user .formBx input[type="submit"]:hover {
+    background: #454647;
+}
+
+/* Error de validación Sign-In */
+.error-form {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: -30px;
+    padding: 0px 30px;
+    color: rgb(236, 53, 53);
+}
+
+/* Sign Up */
+
+.sctsign .container .user.signupBx .formBx input[type="submit"] {
+    background: #1d2f91;
+    transition: 0.7s;
+}
+
+.sctsign .container .user.signupBx .formBx input[type="submit"]:hover {
+    background: rgb(78, 100,84);
+}
+
+.sctsign .container .user .formBx .signup {
+    position: relative;
+    margin-top: 20px;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    color: #555;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.sctsign .container .user .formBx .signup a {
+    font-weight: 200;
+    text-decoration: none;
+    color: #1d2f91;
+}
+
+.sctsign .container .signupBx {
+    pointer-events: none;
+}
+
+.sctsign .container.active .signupBx {  /* Al activarse, Function ToggleForm */
+    pointer-events: initial;
+}
+
+.sctsign .container .signupBx .formBx {
+    top: 100%;
+}
+
+.sctsign .container.active .signupBx .formBx { /* Al activarse, Function ToggleForm /Form  Sign - Up*/
+    top: 0;
+}
+
+.sctsign .container .signupBx .ImgBx {
+    top: -100%;
+    transition: 0.5s;
+}
+
+.sctsign .container.active .signupBx .ImgBx { /* Al activarse, Function ToggleForm /Img Sign-Up*/
+    top: 0;
+}
+
+.sctsign .container .signinBx .formBx {
+    top: 0;
+}
+
+.sctsign .container.active .signinBx .formBx { /* Al activarse, Function ToggleForm /Form  Sign - In*/
+    top: 100%;
+}
+
+.sctsign .container .signinBx .ImgBx {
+    top: 0;
+    transition: 0.5s;
+}
+
+.sctsign .container.active .signinBx .ImgBx { /* Al activarse, Function ToggleForm /Img Sign-In*/
+    top: -100%;
+}
+
+/* Error de validación Sign-Up */
+.error-signup {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: -30px;
+    padding: 0px 30px;
+    color: #1d2f91;
+}
+
+/* Sign Up/Sign In - Responsive */
+
+@media (max-width: 800px) {
+    .sctsign .container {
+        max-width: 400px;
+    }
+
+    .sctsign .container .ImgBx {
+        display: none
+    }
+
+    .sctsign .container .user .formBx {
+        width: 100%
+    }
+
+    .sctsign .container.active .signinBx .formBx  {
+        top: -100%
+    }
+};
+
+
+
+
+
+
