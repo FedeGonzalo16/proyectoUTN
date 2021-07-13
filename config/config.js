@@ -1,8 +1,8 @@
 const config = {
         host: 'localhost',
         user: 'root',
-        password: 'Junta1543',
-        database: 'utnproyecto'
+        password: 'example',
+        database: 'example'
 };
 
 module.exports = config;
